@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '/LogoMain.png'
+import MoodChange from '/Moodchange.png'
 import { IoIosSearch } from 'react-icons/io'
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
             <header>
                 <div className="max-w-[1216px] mx-auto">
                     {/* Header_part */}
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between h-[100px]">
                         <div className="">
                             <img src={Logo} alt="" />
                         </div>
@@ -21,13 +22,13 @@ const Header = () => {
                                 <li>Contact</li>
                             </ul>
                         </div>
-                        <div className="">
-                            <div className="">
-                                <input type="text" placeholder='Search' className='text-sm leading-5 font-inter' />
-                                <IoIosSearch />
+                        <div className="flex items-center gap-x-10">
+                            <div className="flex items-center pl-4 pr-2 gap-x-3 w-[166px] h-[36px] bg-[#F4F4F5] rounded-xl">
+                                <input type="text" placeholder='Search' className='h-full w-full text-sm leading-5 font-inter' />
+                                <IoIosSearch size={16} />
                             </div>
                             <div className="">
-                                
+                                <img src={MoodChange} alt="" />
                             </div>
                         </div>
                     </div>
