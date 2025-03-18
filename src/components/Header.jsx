@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '/LogoMain.png'
 import MoodChange from '/Moodchange.png'
 import { IoIosSearch } from 'react-icons/io'
+import { Link, NavLink } from 'react-router'
 
 const Header = () => {
     return (
@@ -11,15 +12,25 @@ const Header = () => {
                     {/* Header_part */}
                     <div className="flex items-center justify-between h-[100px]">
                         <div className="">
-                            <img src={Logo} alt="" />
+                            <Link to="/"><img src={Logo} alt="" /></Link>
                         </div>
                         <div className="">
                             <ul className='flex items-center text-base leading-6 gap-x-10'>
-                                <li>Home</li>
-                                <li>Blog</li>
-                                <li>Single Post</li>
-                                <li>Pages</li>
-                                <li>Contact</li>
+                                <li><NavLink style={({ isActive }) => ({
+                                    color: isActive ? "blue" : "black", fontWeight: isActive ? "bold" : "normal"
+                                })} to="/">Home</NavLink></li>
+                                <li><NavLink style={({ isActive }) => ({
+                                    color: isActive ? "blue" : "black", fontWeight: isActive ? "bold" : "normal"
+                                })} to="blog">Blog</NavLink></li>
+                                <li><NavLink style={({ isActive }) => ({
+                                    color: isActive ? "blue" : "black", fontWeight: isActive ? "bold" : "normal"
+                                })} to="singlepost">Single Post</NavLink></li>
+                                <li><NavLink style={({ isActive }) => ({
+                                    color: isActive ? "blue" : "black", fontWeight: isActive ? "bold" : "normal"
+                                })} to="pages">Pages</NavLink></li>
+                                <li><NavLink style={({ isActive }) => ({
+                                    color: isActive ? "blue" : "black", fontWeight: isActive ? "bold" : "normal"
+                                })} to="contact">Contact</NavLink></li>
                             </ul>
                         </div>
                         <div className="flex items-center gap-x-10">
