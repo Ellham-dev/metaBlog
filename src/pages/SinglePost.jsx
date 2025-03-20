@@ -62,7 +62,7 @@ const SinglePost = () => {
             </div>
             <div className="">
               <h4 className='text-2xl leading-7 font-semibold mb-4' >Conclusion:</h4>
-              <p className='text-xl leading-8 mb-8'>Traveling is an art form that requires a blend of planning, preparation, and spontaneity. By following these tips and tricks, you can make the most of your journey and create memories that last a lifetime. So pack your bags, embrace the adventure, and enjoy the ride.</p>
+              <p className='text-xl leading-8 mb-20'>Traveling is an art form that requires a blend of planning, preparation, and spontaneity. By following these tips and tricks, you can make the most of your journey and create memories that last a lifetime. So pack your bags, embrace the adventure, and enjoy the ride.</p>
             </div>
           </div>
         </div>
