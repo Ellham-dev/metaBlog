@@ -4,6 +4,7 @@ import Image1 from '/image1.png'
 import User1 from '/User1.png'
 import IconLogo from './IconLogo'
 import PostCard from './PostCard'
+import { Link } from 'react-router'
 
 const LatestPost = () => {
   return (
@@ -19,7 +20,8 @@ const LatestPost = () => {
             <div className="text-2xl leading-7 font-bold mb-8">Latest Post</div>
             {/* single_img */}
             <div className="flex items-center flex-wrap gap-5 mb-8">
-             <PostCard/>
+
+             <Link to={"postCard"}><PostCard/></Link>
              <PostCard/>
              <PostCard/>
              <PostCard/>
